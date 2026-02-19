@@ -85,6 +85,52 @@
             lista4.ForEach(listaEleme4 => {
                 Console.WriteLine(listaEleme4);
             });
+
+            int[] tömb222 = lista2.ToArray();
+            List<int> lista222 = tömb3.ToList();
+
+            string szöveg3 = "Helló Világ!";
+            char[] szöveg4 = new char[] {'H', 'e', 'l', 'l', 'ó', ' ', 'V', 'i', 'l', 'á', 'g'};
+            char[] szöveg5 = {'H', 'e', 'l', 'l', 'ó', ' ', 'V', 'i', 'l', 'á', 'g'};
+            char[] szöveg6 = "Helló világ".ToCharArray();
+            char[] szöveg7 = szöveg3.ToCharArray();
+
+            int karakterekSzáma1 = szöveg3.Count();
+            int karakterekSzáma2 = szöveg3.Length;
+            string szöveg8 = szöveg3.ToLower();
+            szöveg8 = szöveg3.Replace('a', 'b');
+            szöveg8 = szöveg3.Replace("a", "b");
+            szöveg8 = szöveg3.Replace("a", "");
+            szöveg8 = szöveg3.Replace("asdasd", "b");
+            szöveg8 = szöveg3.Substring(6, 2);
+            Console.WriteLine(szöveg8);
+            szöveg8 = szöveg3[6..8];
+            Console.WriteLine(szöveg8);
+            szöveg8 = szöveg3[6..^2];
+            Console.WriteLine(szöveg8);
+            szöveg8 = szöveg3[6..];
+            Console.WriteLine(szöveg8);
+            return;
+            string[] szövegek1 = szöveg3.Split(" ");
+            List<string> szövegek2 = szöveg3.Split(" ").ToList();
+            szöveg3 = string.Join(" ", szövegek1);
+
+            Console.WriteLine(string.Join(", ", tömb3));
+
+            if (szöveg3.Contains("Helló"))
+            {
+                Console.WriteLine("A szöveg tartalmazza a 'Helló' szót");
+            }
+
+            Console.Clear();
+            int szám10 = 3;
+            Console.WriteLine(szám10.ToString().PadLeft(10, '0'));
+
+            string segéd = " s zö veg       ";
+            Console.WriteLine("'"+segéd+"'");
+            Console.WriteLine("'"+segéd.Trim()+"'");
+            Console.WriteLine("'"+segéd.Trim(new char[] {' ', 's', 'g'})+"'");
+
         }
     }
 }
