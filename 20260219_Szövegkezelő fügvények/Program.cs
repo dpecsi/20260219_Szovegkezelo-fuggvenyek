@@ -103,14 +103,9 @@
             szöveg8 = szöveg3.Replace("a", "");
             szöveg8 = szöveg3.Replace("asdasd", "b");
             szöveg8 = szöveg3.Substring(6, 2);
-            Console.WriteLine(szöveg8);
             szöveg8 = szöveg3[6..8];
-            Console.WriteLine(szöveg8);
             szöveg8 = szöveg3[6..^2];
-            Console.WriteLine(szöveg8);
             szöveg8 = szöveg3[6..];
-            Console.WriteLine(szöveg8);
-            return;
             string[] szövegek1 = szöveg3.Split(" ");
             List<string> szövegek2 = szöveg3.Split(" ").ToList();
             szöveg3 = string.Join(" ", szövegek1);
